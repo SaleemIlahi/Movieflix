@@ -1,0 +1,89 @@
+@import './color.scss';
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to right,rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(../../movieBg.jpg);
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+
+    @mixin button($width,$height,$weight,$bg-color){
+        width: $width;
+        height: $height;
+        font-weight: $weight;
+        background: $bg-color;
+    }
+
+    .btn{
+        border: none;
+        outline: none;
+        font-size: 1.1rem;
+        cursor: pointer;
+    }
+
+    header{
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            button{
+                @include button(100px,40px,600,$primary-color);
+                @extend .btn;
+                color: $secondary-color;
+                margin-right: 80px;
+            }
+        }
+    }
+
+    .text-section{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        color: $white-color;
+
+        h1{
+            font-size: 4rem;
+            letter-spacing: 2px;
+        }
+
+        h2{
+            margin: 20px 0;
+            font-weight: 300;
+            font-size: 2rem;
+        }
+
+        p{
+            font-size: 1.4rem;
+            margin-bottom: 40px;
+        }
+
+        .input-section{
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-between;
+            background: $white-color;
+
+            input{
+                @include button(75%,100%,600,transparent);
+                @extend .btn;
+                color: $secondary-color;
+                padding: 0 20px;
+            }
+
+            button{
+                @include button(25%,100%,700,$primary-color);
+                @extend .btn;
+
+                a{
+                    text-decoration: none;
+                    color: $secondary-color;
+                }
+            }
+        }
+    }
+}
