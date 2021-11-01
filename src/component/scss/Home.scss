@@ -76,14 +76,15 @@
                 cursor: text;
             }
 
-            button{
-                @include button(25%,100%,700,$primary-color);
-                @extend .btn;
-
                 a{
                     text-decoration: none;
                     color: $secondary-color;
-                }
+                    @include button(25%,100%,700,$primary-color);
+                    
+                    button{
+                        @include button(100%,100%,700,transparent);
+                        @extend .btn;
+                    }
             }
         }
     }

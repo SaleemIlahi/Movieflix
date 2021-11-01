@@ -18,9 +18,11 @@ const Home = () => {
                 <p>Ready to watch? Enter your email to create or restart your membership.</p>
                 <form className="input-section">
                     <input type="email" placeholder="Email Address" required />
-                    <button>
-                        <Link to="/Page">Get Started <i className="fas fa-greater-than"></i></Link>
-                    </button>
+                    <Link to="/Page">
+                        <button>
+                            Get Started <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </Link>
                 </form>
             </div>
         </div>
