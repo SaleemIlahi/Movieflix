@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/Movieflix/static/css/main.f61dec57.chunk.css",
+    "main.js": "/Movieflix/static/js/main.2e0daa45.chunk.js",
+    "main.js.map": "/Movieflix/static/js/main.2e0daa45.chunk.js.map",
+    "runtime-main.js": "/Movieflix/static/js/runtime-main.dbc7cb3e.js",
+    "runtime-main.js.map": "/Movieflix/static/js/runtime-main.dbc7cb3e.js.map",
+    "static/js/2.b13e2da8.chunk.js": "/Movieflix/static/js/2.b13e2da8.chunk.js",
+    "static/js/2.b13e2da8.chunk.js.map": "/Movieflix/static/js/2.b13e2da8.chunk.js.map",
+    "static/js/3.86910c41.chunk.js": "/Movieflix/static/js/3.86910c41.chunk.js",
+    "static/js/3.86910c41.chunk.js.map": "/Movieflix/static/js/3.86910c41.chunk.js.map",
+    "index.html": "/Movieflix/index.html",
+    "static/css/main.f61dec57.chunk.css.map": "/Movieflix/static/css/main.f61dec57.chunk.css.map",
+    "static/js/2.b13e2da8.chunk.js.LICENSE.txt": "/Movieflix/static/js/2.b13e2da8.chunk.js.LICENSE.txt",
+    "static/media/logo.58db6408.svg": "/Movieflix/static/media/logo.58db6408.svg",
+    "static/media/Home.scss": "/Movieflix/static/media/movieBg.7316b935.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dbc7cb3e.js",
+    "static/js/2.b13e2da8.chunk.js",
+    "static/css/main.f61dec57.chunk.css",
+    "static/js/main.2e0daa45.chunk.js"
+  ]
+}
