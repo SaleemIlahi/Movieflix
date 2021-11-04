@@ -1,20 +1,21 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 import '../scss/Slider.scss'
 
-const Slider = () => {
+const Slider = ({ URL }) => {
 
     let [respo, setRespo] = useState([])
 
     useEffect(() => {
         const Api = async () => {
-            const movieFetch = await fetch(`https://api.themoviedb.org/3/movie/popular?api_key=1015bc24cd3e7930b331be222621accb&language=en-US&page=1`)
+            const movieFetch = await fetch(`${URL}`)
             const movieResponse = await movieFetch.json()
 
             setRespo(movieResponse.results)
         }
 
         Api()
-    }, [])
+    }, [URL])
 
     const sliderControl = (activeSlide, targetSlide) => {
         const slideRow = document.querySelector(".slider-row")
@@ -59,9 +60,12 @@ const Slider = () => {
                                     <div className="text-section">
                                         <h1 className="title">{repo.original_title}</h1>
                                         <p>{repo.overview.slice(0, 200)}...</p>
-                                        <div className="btn">
+                                        <Link to={{
+                                            pathname: "/Youtube",
+                                            state: repo.id
+                                        }}>
                                             <button>Play</button>
-                                        </div>
+                                        </Link>
                                     </div>
                                 </div>
                             )
